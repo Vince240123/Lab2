@@ -60,7 +60,7 @@ def calc_median_temperature(List):
     sorted_list = sort_temparature(List)
     length = len(List)
     if length % 2 == 0:
-        median = (sorted_list[(length // 2)] + sorted_list[(length // 2) + 1]) / 2
+        median = (sorted_list[(length // 2)] + sorted_list[(length // 2) - 1]) / 2
     elif length % 2 == 1:
         median = sorted_list[length // 2]
 
